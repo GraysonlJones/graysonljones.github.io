@@ -1,0 +1,6 @@
+:root { --fg: #1a1a1a; --bg: #fafafa; --muted: #666; }
+@media (prefers-color-scheme: dark) { :root { --fg: #eee; --bg: #121212; --muted: #999; } }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: var(--fg); background: var(--bg); line-height: 1.6; }
+header, main, footer { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+header p, footer { color: var(--muted); }
