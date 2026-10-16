@@ -3,22 +3,316 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grayson Jones — Portfolio</title>
+  <title>Grayson Jones — [field, e.g. Engineering Student]</title>
+  <meta name="description" content="Grayson Jones — [one sentence: what you study, what you love building, and what you’re looking for next.]">
+  <meta name="theme-color" content="#0E1226">
+  <link rel="canonical" href="https://graysonljones.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grayson Jones — [field, e.g. Engineering Student]">
+  <meta property="og:description" content="[One sentence: what you study, what you love building, and what you’re looking for next.]">
+  <meta property="og:url" content="https://graysonljones.github.io/">
+  <meta property="og:image" content="https://graysonljones.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grayson Jones — [field, e.g. Engineering Student]">
+  <meta name="twitter:description" content="[One sentence: what you study, what you love building, and what you’re looking for next.]">
+  <meta name="twitter:image" content="https://graysonljones.github.io/assets/og-image.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600;700;800&amp;family=Anybody:wdth,wght@50..150,400..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Grayson Jones</h1>
-    <p>Portfolio</p>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="wrap">
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke-linecap="round"><path d="M3 15 Q10 21 19 9" stroke="currentColor" stroke-width="2.2"/><path d="M11 15 L16 6" stroke="currentColor" stroke-width="1.6"/><circle class="fill-accent" cx="16.5" cy="5.5" r="2.2"/><path d="M10 17 L8 24 M12 17 L15 24 M6 24 H17" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span><span class="brand-first">Grayson</span><span class="brand-initial" aria-hidden="true">G.</span> Jones</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-resume" href="resume.pdf">Resume</a>
+    </nav>
   </header>
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Coming soon.</p>
+
+  <main id="main">
+    <!-- ───────── Hero ───────── -->
+    <section class="hero" aria-labelledby="hero-name">
+      <!-- Large illustration (wide screens) -->
+      <svg class="hero-art hero-art--lg" aria-hidden="true" viewBox="0 0 440 560" width="440" height="560">
+        <g class="rv rv-1">
+          <path d="M -9.8 187.2 A 300 300 0 0 1 449.8 187.2" fill="none" stroke="#3B5BDB" stroke-width="1.6" stroke-dasharray="3 9"/>
+          <path d="M 30 300 A 240 240 0 0 1 410 300" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 10" opacity="0.45"/>
+        </g>
+        <g class="rv rv-2">
+          <ellipse cx="220" cy="508" rx="150" ry="28" fill="none" stroke="#EDE6D6" stroke-width="1.4" stroke-dasharray="2 6" opacity="0.6"/>
+          <ellipse cx="220" cy="508" rx="96" ry="18" fill="none" stroke="#3B5BDB" stroke-width="1.4" opacity="0.9"/>
+          <g class="compass" fill="#EDE6D6">
+            <text x="220" y="472">N</text>
+            <text x="380" y="512">E</text>
+            <text x="220" y="552">S</text>
+            <text x="60" y="512">W</text>
+          </g>
+        </g>
+        <g class="rvo">
+          <path d="M 206 432 L 234 432 L 250 508 L 190 508 Z" fill="#161C38" stroke="#EDE6D6" stroke-width="2"/>
+          <rect class="fill-accent" x="198" y="410" width="44" height="28" rx="3"/>
+          <line x1="206" y1="424" x2="234" y2="424" stroke="#0E1226" stroke-width="2"/>
+        </g>
+        <g class="dish">
+          <path class="screen" d="M -86 -34 Q 0 34 86 -34 Q 0 -8 -86 -34 Z" fill="#EDE6D6"/>
+          <path d="M -86 -34 Q 0 34 86 -34" fill="none" stroke="#EDE6D6" stroke-width="3"/>
+          <path d="M -60 -26 Q 0 18 60 -26" fill="none" stroke="#0E1226" stroke-width="1.2" opacity="0.4"/>
+          <path d="M -78 -30 L 0 -104 L 78 -30" fill="none" stroke="#EDE6D6" stroke-width="2"/>
+          <circle class="fill-accent" cx="0" cy="-108" r="8"/>
+          <line x1="0" y1="2" x2="0" y2="14" stroke="#EDE6D6" stroke-width="5"/>
+        </g>
+        <line class="beam stroke-accent" x1="270" y1="320" x2="362" y2="132" stroke-width="2" stroke-dasharray="5 6"/>
+        <g class="sat">
+          <g transform="translate(370 120) rotate(-28)">
+            <rect class="fill-accent" x="-34" y="-7" width="22" height="14"/>
+            <rect class="fill-accent" x="12" y="-7" width="22" height="14"/>
+            <line x1="-34" y1="0" x2="34" y2="0" stroke="#0E1226" stroke-width="1"/>
+            <rect x="-10" y="-11" width="20" height="22" rx="2" fill="#EDE6D6"/>
+            <line x1="0" y1="11" x2="0" y2="20" stroke="#EDE6D6" stroke-width="2"/>
+          </g>
+          <path d="M 392 96 a 22 22 0 0 1 14 22 M 400 84 a 36 36 0 0 1 22 36" fill="none" stroke="#EDE6D6" stroke-width="1.6" opacity="0.7"/>
+        </g>
+        <g class="rv rv-sparkle-1 fill-accent"><path d="M30 60 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/></g>
+        <g class="rv rv-sparkle-2" fill="#EDE6D6"><path d="M150 40 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/><path d="M420 300 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/></g>
+      </svg>
+
+      <h1 id="hero-name" class="hero-name">
+        <span class="riso"><span class="ink-cream">Grayson</span><span class="ink-accent" aria-hidden="true">Grayson</span></span>
+        <span class="riso riso--indent"><span class="ink-cream">Jones.</span><span class="ink-accent" aria-hidden="true">Jones.</span></span>
+      </h1>
+
+      <!-- Small illustration (phones and tablets) -->
+      <svg class="hero-art hero-art--sm" aria-hidden="true" viewBox="0 0 220 250" width="220" height="250">
+        <path class="rv rv-1" d="M -20 125 A 150 150 0 0 1 240 125" fill="none" stroke="#3B5BDB" stroke-width="1.4" stroke-dasharray="3 8"/>
+        <ellipse class="rv rv-2" cx="110" cy="236" rx="84" ry="14" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.6"/>
+        <g class="rvo">
+          <path d="M 102 196 L 118 196 L 128 236 L 92 236 Z" fill="#161C38" stroke="#EDE6D6" stroke-width="1.6"/>
+          <rect class="fill-accent" x="96" y="180" width="28" height="18" rx="2"/>
+        </g>
+        <g class="dish">
+          <path d="M -48 -19 Q 0 19 48 -19 Q 0 -4 -48 -19 Z" fill="#EDE6D6"/>
+          <path d="M -44 -17 L 0 -58 L 44 -17" fill="none" stroke="#EDE6D6" stroke-width="1.6"/>
+          <circle class="fill-accent" cx="0" cy="-60" r="5"/>
+          <line x1="0" y1="1" x2="0" y2="9" stroke="#EDE6D6" stroke-width="4"/>
+        </g>
+        <line class="beam stroke-accent" x1="137" y1="136" x2="175" y2="78" stroke-width="1.6" stroke-dasharray="4 5"/>
+        <g class="sat">
+          <g transform="translate(180 68) rotate(-28)">
+            <rect class="fill-accent" x="-22" y="-5" width="14" height="10"/>
+            <rect class="fill-accent" x="8" y="-5" width="14" height="10"/>
+            <rect x="-7" y="-8" width="14" height="16" rx="2" fill="#EDE6D6"/>
+          </g>
+        </g>
+      </svg>
+
+      <div class="hero-intro">
+        <p class="hero-role rv">[Your field, in one line — e.g. engineering student building radio &amp; embedded systems]</p>
+        <div class="hero-copy rv">
+          <p>[Two sentences: what you’re studying, what you love building, and what you’re looking for next. Short enough to read on a phone in one breath.]</p>
+          <div class="hero-cta">
+            <a class="btn btn--fill" href="#work">See the work <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v12M1.5 7.5 7 13l5.5-5.5"/></svg></a>
+            <a class="btn btn--line" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Work ───────── -->
+    <section id="work" class="work" aria-labelledby="work-h">
+      <h2 id="work-h" class="riso section-h"><span class="ink-cream">Work</span><span class="ink-accent" aria-hidden="true">Work</span></h2>
+
+      <!-- 01 · Featured build -->
+      <article class="project project--featured" aria-labelledby="p1-h">
+        <span class="proj-num" aria-hidden="true">01</span>
+        <svg class="skyplot" aria-hidden="true" width="260" height="260" viewBox="0 0 260 260">
+          <circle cx="130" cy="130" r="120" fill="none" stroke="#EDE6D6" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="130" cy="130" r="80" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.5"/>
+          <circle cx="130" cy="130" r="40" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.5"/>
+          <path d="M130 10 V250 M10 130 H250" stroke="#3B5BDB" stroke-width="1.2"/>
+          <path class="stroke-accent" d="M40 190 Q 110 40 220 80" fill="none" stroke-width="3"/>
+          <circle class="fill-accent" cx="220" cy="80" r="6"/>
+          <text class="compass" x="130" y="8" fill="#EDE6D6">N</text>
+        </svg>
+
+        <div class="p1-head">
+          <p class="tags"><span class="tag tag--fill">Featured build</span><span class="tag">[Personal · 20XX–now]</span></p>
+          <h3 id="p1-h" class="h-featured">SatCom ground station &amp; dish rotator</h3>
+          <p class="lede">[One line: a home-built ground station that points a dish at satellites as they pass and receives their signal — what it does and why you built it.]</p>
+        </div>
+
+        <div class="p1-gallery">
+          <!--
+            Photo slots: to add a photo, add the "photo--filled" class to the figure,
+            replace the icon <svg> with an <img>, and keep (or update) the figcaption:
+            <figure class="photo photo--filled p1-main">
+              <span class="tape …"></span>
+              <img src="assets/ground-station-dish.webp" alt="…" width="1200" height="800">
+              <figcaption>…</figcaption>
+            </figure>
+          -->
+          <figure class="photo p1-main">
+            <span class="tape tape--l" aria-hidden="true"></span><span class="tape tape--r" aria-hidden="true"></span>
+            <svg class="photo-icon" width="44" height="34" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
+            <figcaption>[Photo · the finished dish on its mount, outdoors · 3:2]</figcaption>
+          </figure>
+          <figure class="photo p1-side">
+            <span class="tape tape--l" aria-hidden="true"></span>
+            <svg class="photo-icon" width="36" height="28" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
+            <figcaption>[Photo · rotator mechanism close-up — motors, gears, bearings]</figcaption>
+          </figure>
+          <figure class="photo p1-side">
+            <span class="tape tape--r" aria-hidden="true"></span>
+            <svg class="photo-icon" width="36" height="28" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
+            <figcaption>[Photo · controller electronics / wiring]</figcaption>
+          </figure>
+        </div>
+
+        <div class="p1-detail">
+          <figure class="photo p1-shot">
+            <span class="tape tape--mid" aria-hidden="true"></span>
+            <svg class="photo-icon" width="36" height="28" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M1 8 H43"/><path class="stroke-accent" d="M6 26 L14 18 L20 22 L28 12 L38 20"/></svg>
+            <figcaption>[Screenshot · tracking software during a pass, or the first signal you received]</figcaption>
+          </figure>
+
+          <div class="p1-text">
+            <dl class="writeup">
+              <div><dt class="label">The problem</dt><dd>[Why you needed a rotator — satellites cross the sky in minutes, so the dish has to follow them.]</dd></div>
+              <div><dt class="label">What I built</dt><dd>[Mechanics, electronics and software you designed yourself.]</dd></div>
+              <div><dt class="label">Hardest problem</dt><dd>[One key decision or failure and how you fixed it.]</dd></div>
+              <div><dt class="label">Result</dt><dd>[What it can do now — first pass tracked, first image or signal decoded.]</dd></div>
+            </dl>
+            <dl class="specs">
+              <div><dt>Azimuth</dt><dd>[range, e.g. 0–360°]</dd></div>
+              <div><dt>Elevation</dt><dd>[range]</dd></div>
+              <div><dt>Band / target</dt><dd>[frequency · satellites]</dd></div>
+              <div><dt>Built with</dt><dd>[controller · motors · SDR · software]</dd></div>
+            </dl>
+            <p class="links">
+              <a class="link-primary" href="#p1">Read the build log →</a>
+              <a href="#p1-code">Code ↗</a>
+              <a href="#p1-video">Video of a pass ↗</a>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="project project--two" aria-labelledby="p2-h">
+        <span class="proj-num proj-num--end" aria-hidden="true">02</span>
+        <div class="p2-body">
+          <figure class="photo p2-photo">
+            <span class="tape tape--l" aria-hidden="true"></span><span class="tape tape--r" aria-hidden="true"></span>
+            <svg class="photo-icon" width="44" height="34" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
+            <figcaption>[Photo or screenshot · project two · 4:3]</figcaption>
+          </figure>
+          <div class="p2-card">
+            <h3 id="p2-h" class="h-project">[Project Title Two]</h3>
+            <p class="summary">[One line on the problem, the approach and the result — about this long.]</p>
+            <dl class="meta">
+              <div><dt>My part</dt><dd>[Role · team size]</dd></div>
+              <div><dt>Built with</dt><dd>[Tools]</dd></div>
+            </dl>
+            <a class="link-primary" href="#p2">Open the project →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="project project--three" aria-labelledby="p3-h">
+        <span class="proj-num proj-num--mid" aria-hidden="true">03</span>
+        <div class="p3-body">
+          <div class="p3-photos">
+            <figure class="photo p3-a">
+              <span class="tape tape--l" aria-hidden="true"></span>
+              <svg class="photo-icon" width="40" height="30" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
+              <figcaption>[Photo · project three · 3:4]</figcaption>
+            </figure>
+            <figure class="photo p3-b">
+              <span class="tape tape--r" aria-hidden="true"></span>
+              <figcaption>[Detail shot · 1:1]</figcaption>
+            </figure>
+          </div>
+          <div class="p3-text">
+            <h3 id="p3-h" class="h-project">[Project Title Three]</h3>
+            <p class="summary">[One line on a class or side project that shows range.]</p>
+            <dl class="meta">
+              <div><dt>My part</dt><dd>[Solo]</dd></div>
+              <div><dt>Built with</dt><dd>[Tools]</dd></div>
+            </dl>
+            <a class="link-primary" href="#p3">Open the project →</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ───────── About ───────── -->
+    <section id="about" class="about" aria-labelledby="about-h">
+      <div class="about-aside">
+        <h2 id="about-h" class="riso section-h"><span class="ink-cream">About</span><span class="ink-accent" aria-hidden="true">About</span></h2>
+        <blockquote class="pull">“[A single line that sounds like you — the thing you’d say about your work over coffee.]”</blockquote>
+        <figure class="photo portrait">
+          <span class="tape tape--mid" aria-hidden="true"></span>
+          <figcaption>[Photo of you — at the dish, the bench or outdoors]</figcaption>
+        </figure>
+      </div>
+      <div class="about-body">
+        <p class="about-lead">[Paragraph one: what you study, where, and what you’re working on now. Two or three sentences that name the kind of problems you like.]</p>
+        <p>[Paragraph two: how you got into radio, satellites or hardware — a moment, a person or a first project. Keep it human and specific.]</p>
+        <p>[Paragraph three: what you do outside class, and the internship or role you’re looking for next.]</p>
+        <h3 class="label skills-h">Skills &amp; interests</h3>
+        <ul class="chips">
+          <li>[Skill]</li>
+          <li class="chip--accent chip--tilt-l">[Skill]</li>
+          <li>[Tool]</li>
+          <li class="chip--cream">[Tool]</li>
+          <li class="chip--tilt-r">[Interest]</li>
+          <li>[Interest]</li>
+        </ul>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2026 Grayson Jones</p>
-  </footer>
+</div>
+
+<!-- ───────── Contact ───────── -->
+<section id="contact" class="contact" aria-labelledby="contact-h">
+  <svg class="contact-art" aria-hidden="true" width="520" height="460" viewBox="0 0 520 460" fill="none" stroke-linecap="round">
+    <path d="M 300 360 A 230 230 0 0 1 470 120" stroke="#0E1226" stroke-width="2" stroke-dasharray="4 10" opacity="0.5"/>
+    <path d="M 330 330 A 190 190 0 0 1 470 160" stroke="#0E1226" stroke-width="2" stroke-dasharray="4 10" opacity="0.35"/>
+    <g transform="translate(250 330) rotate(35)">
+      <path d="M -130 -50 Q 0 50 130 -50 Q 0 -12 -130 -50 Z" fill="#0E1226"/>
+      <path d="M -118 -46 L 0 -156 L 118 -46" stroke="#0E1226" stroke-width="5"/>
+      <circle cx="0" cy="-160" r="12" fill="#EDE6D6"/>
+    </g>
+    <path d="M 236 360 L 262 360 L 290 470 L 208 470 Z" fill="#0E1226"/>
+  </svg>
+  <div class="contact-inner">
+    <h2 id="contact-h" class="riso riso--inverse"><span class="ink-cream" aria-hidden="true">Contact</span><span class="ink-ground">Contact</span></h2>
+    <a class="email" href="mailto:">[email address]</a>
+    <ul class="contact-links">
+      <li><a class="pill" href="https://github.com/GraysonlJones">GitHub <span aria-hidden="true">↗</span></a></li>
+      <li><a class="pill" href="#linkedin">LinkedIn <span aria-hidden="true">↗</span></a></li>
+      <li><a class="pill pill--fill" id="resume" href="resume.pdf">Resume (PDF) <span aria-hidden="true">↓</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>Grayson Jones · © 2026</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
 </body>
 </html>
