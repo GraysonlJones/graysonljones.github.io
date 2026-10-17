@@ -46,7 +46,54 @@
   <main id="main">
     <!-- ───────── Hero ───────── -->
     <section class="hero" aria-labelledby="hero-name">
-      <!-- Large illustration (wide screens) -->
+      <div class="hero-text">
+        <h1 id="hero-name" class="hero-name">
+          <span class="riso"><span class="ink-cream">Grayson</span><span class="ink-accent" aria-hidden="true">Grayson</span></span>
+          <span class="riso riso--indent"><span class="ink-cream">Jones.</span><span class="ink-accent" aria-hidden="true">Jones.</span></span>
+        </h1>
+
+        <!-- Small illustration (phones, tablets, small laptops) -->
+        <svg class="hero-art hero-art--sm" aria-hidden="true" viewBox="0 0 220 250" width="220" height="250">
+          <path class="rv rv-1" d="M -20 125 A 150 150 0 0 1 240 125" fill="none" stroke="#3B5BDB" stroke-width="1.4" stroke-dasharray="3 8"/>
+          <ellipse class="rv rv-2" cx="110" cy="236" rx="84" ry="14" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.6"/>
+          <g class="rvo">
+            <path d="M 102 196 L 118 196 L 128 236 L 92 236 Z" fill="#161C38" stroke="#EDE6D6" stroke-width="1.6"/>
+            <rect class="fill-accent" x="96" y="180" width="28" height="18" rx="2"/>
+          </g>
+          <g class="rv rv-gear"><circle cx="110" cy="220" r="9" fill="none" stroke="#EDE6D6" stroke-width="4" stroke-dasharray="3 2.65"/><circle cx="110" cy="220" r="3" fill="#EDE6D6"/></g>
+          <g class="rv rv-callout" fill="none">
+            <path class="stroke-accent" d="M 84 190 A 26 26 0 0 1 91.6 171.6" stroke-width="1.4" stroke-dasharray="2.5 2.5"/>
+            <g class="art-label art-label--sm" fill="#EDE6D6"><text x="80" y="170" text-anchor="end">EL</text><text x="124" y="242">AZ</text></g>
+          </g>
+          <g class="dish">
+            <path d="M -48 -19 Q 0 19 48 -19 Q 0 -4 -48 -19 Z" fill="#EDE6D6"/>
+            <path d="M -44 -17 L 0 -58 L 44 -17" fill="none" stroke="#EDE6D6" stroke-width="1.6"/>
+            <circle class="fill-accent" cx="0" cy="-60" r="5"/>
+            <line x1="0" y1="1" x2="0" y2="9" stroke="#EDE6D6" stroke-width="4"/>
+          </g>
+          <line class="beam stroke-accent" x1="137" y1="136" x2="175" y2="78" stroke-width="1.6" stroke-dasharray="4 5"/>
+          <g class="sat">
+            <g transform="translate(180 68) rotate(-28)">
+              <rect class="fill-accent" x="-22" y="-5" width="14" height="10"/>
+              <rect class="fill-accent" x="8" y="-5" width="14" height="10"/>
+              <rect x="-7" y="-8" width="14" height="16" rx="2" fill="#EDE6D6"/>
+            </g>
+          </g>
+        </svg>
+
+        <div class="hero-intro">
+          <p class="hero-role rv">[Your field, in one line — e.g. engineering student building robots, radio &amp; embedded systems]</p>
+          <div class="hero-copy rv">
+            <p>[Two sentences: what you’re studying, what you love building, and what you’re looking for next. Short enough to read on a phone in one breath.]</p>
+            <div class="hero-cta">
+              <a class="btn btn--fill" href="#work">See the work <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v12M1.5 7.5 7 13l5.5-5.5"/></svg></a>
+              <a class="btn btn--line" href="#contact">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large illustration (wide screens): its own column, never over the text -->
       <svg class="hero-art hero-art--lg" aria-hidden="true" viewBox="0 0 440 560" width="440" height="560">
         <g class="rv rv-1">
           <path d="M -9.8 187.2 A 300 300 0 0 1 449.8 187.2" fill="none" stroke="#3B5BDB" stroke-width="1.6" stroke-dasharray="3 9"/>
@@ -55,17 +102,33 @@
         <g class="rv rv-2">
           <ellipse cx="220" cy="508" rx="150" ry="28" fill="none" stroke="#EDE6D6" stroke-width="1.4" stroke-dasharray="2 6" opacity="0.6"/>
           <ellipse cx="220" cy="508" rx="96" ry="18" fill="none" stroke="#3B5BDB" stroke-width="1.4" opacity="0.9"/>
-          <g class="compass" fill="#EDE6D6">
-            <text x="220" y="472">N</text>
-            <text x="380" y="512">E</text>
-            <text x="220" y="552">S</text>
-            <text x="60" y="512">W</text>
+          <g class="art-label" fill="#EDE6D6">
+            <text x="220" y="472" text-anchor="middle">N</text>
+            <text x="380" y="512" text-anchor="middle">E</text>
+            <text x="220" y="552" text-anchor="middle">S</text>
+            <text x="60" y="512" text-anchor="middle">W</text>
           </g>
         </g>
         <g class="rvo">
           <path d="M 206 432 L 234 432 L 250 508 L 190 508 Z" fill="#161C38" stroke="#EDE6D6" stroke-width="2"/>
           <rect class="fill-accent" x="198" y="410" width="44" height="28" rx="3"/>
           <line x1="206" y1="424" x2="234" y2="424" stroke="#0E1226" stroke-width="2"/>
+        </g>
+        <g class="rv rv-gear">
+          <circle cx="220" cy="476" r="15" fill="none" stroke="#EDE6D6" stroke-width="6" stroke-dasharray="4.2 3.65"/>
+          <circle cx="220" cy="476" r="5" fill="#EDE6D6"/>
+        </g>
+        <g class="rv rv-callout" fill="none" stroke="#EDE6D6" stroke-width="1">
+          <path class="stroke-accent" d="M 180 420 A 40 40 0 0 1 191.7 391.7" stroke-width="1.6" stroke-dasharray="3 3"/>
+          <path class="stroke-accent" d="M 186 389 L 192 391 L 190 397" stroke-width="1.6"/>
+          <circle cx="178" cy="404" r="2.2" fill="#EDE6D6" stroke="none"/><path d="M 178 404 L 112 384 H 92"/>
+          <circle cx="236" cy="476" r="2.2" fill="#EDE6D6" stroke="none"/><path d="M 236 476 L 300 456 H 330"/>
+          <circle cx="198" cy="424" r="2.2" fill="#EDE6D6" stroke="none"/><path d="M 198 424 L 150 448 H 122"/>
+        </g>
+        <g class="rv rv-labels art-label art-label--callout" fill="#EDE6D6">
+          <text x="88" y="388" text-anchor="end">EL AXIS</text>
+          <text x="334" y="460">AZ AXIS</text>
+          <text x="118" y="452" text-anchor="end">CONTROLLER</text>
         </g>
         <g class="dish">
           <path class="screen" d="M -86 -34 Q 0 34 86 -34 Q 0 -8 -86 -34 Z" fill="#EDE6D6"/>
@@ -88,79 +151,77 @@
         </g>
         <g class="rv rv-sparkle-1 fill-accent"><path d="M30 60 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/></g>
         <g class="rv rv-sparkle-2" fill="#EDE6D6"><path d="M150 40 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/><path d="M420 300 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/></g>
+        <!-- registration crosshairs -->
+        <g class="rv rv-1" fill="none" stroke="#EDE6D6" stroke-width="1.2" opacity="0.7"><circle cx="16" cy="16" r="7"/><path d="M16 4 V28 M4 16 H28"/><circle cx="424" cy="548" r="7"/><path d="M424 536 V560 M412 548 H436"/></g>
       </svg>
-
-      <h1 id="hero-name" class="hero-name">
-        <span class="riso"><span class="ink-cream">Grayson</span><span class="ink-accent" aria-hidden="true">Grayson</span></span>
-        <span class="riso riso--indent"><span class="ink-cream">Jones.</span><span class="ink-accent" aria-hidden="true">Jones.</span></span>
-      </h1>
-
-      <!-- Small illustration (phones and tablets) -->
-      <svg class="hero-art hero-art--sm" aria-hidden="true" viewBox="0 0 220 250" width="220" height="250">
-        <path class="rv rv-1" d="M -20 125 A 150 150 0 0 1 240 125" fill="none" stroke="#3B5BDB" stroke-width="1.4" stroke-dasharray="3 8"/>
-        <ellipse class="rv rv-2" cx="110" cy="236" rx="84" ry="14" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.6"/>
-        <g class="rvo">
-          <path d="M 102 196 L 118 196 L 128 236 L 92 236 Z" fill="#161C38" stroke="#EDE6D6" stroke-width="1.6"/>
-          <rect class="fill-accent" x="96" y="180" width="28" height="18" rx="2"/>
-        </g>
-        <g class="dish">
-          <path d="M -48 -19 Q 0 19 48 -19 Q 0 -4 -48 -19 Z" fill="#EDE6D6"/>
-          <path d="M -44 -17 L 0 -58 L 44 -17" fill="none" stroke="#EDE6D6" stroke-width="1.6"/>
-          <circle class="fill-accent" cx="0" cy="-60" r="5"/>
-          <line x1="0" y1="1" x2="0" y2="9" stroke="#EDE6D6" stroke-width="4"/>
-        </g>
-        <line class="beam stroke-accent" x1="137" y1="136" x2="175" y2="78" stroke-width="1.6" stroke-dasharray="4 5"/>
-        <g class="sat">
-          <g transform="translate(180 68) rotate(-28)">
-            <rect class="fill-accent" x="-22" y="-5" width="14" height="10"/>
-            <rect class="fill-accent" x="8" y="-5" width="14" height="10"/>
-            <rect x="-7" y="-8" width="14" height="16" rx="2" fill="#EDE6D6"/>
-          </g>
-        </g>
-      </svg>
-
-      <div class="hero-intro">
-        <p class="hero-role rv">[Your field, in one line — e.g. engineering student building radio &amp; embedded systems]</p>
-        <div class="hero-copy rv">
-          <p>[Two sentences: what you’re studying, what you love building, and what you’re looking for next. Short enough to read on a phone in one breath.]</p>
-          <div class="hero-cta">
-            <a class="btn btn--fill" href="#work">See the work <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v12M1.5 7.5 7 13l5.5-5.5"/></svg></a>
-            <a class="btn btn--line" href="#contact">Get in touch</a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- ───────── Work ───────── -->
     <section id="work" class="work" aria-labelledby="work-h">
-      <h2 id="work-h" class="riso section-h"><span class="ink-cream">Work</span><span class="ink-accent" aria-hidden="true">Work</span></h2>
+      <div class="work-head" data-rid="work">
+        <h2 id="work-h" class="riso section-h"><span class="ink-cream">Work</span><span class="ink-accent" aria-hidden="true">Work</span></h2>
+
+        <!-- Robot arm: wide screens -->
+        <svg class="arm arm--lg rv" aria-hidden="true" width="310" height="176" viewBox="0 0 310 176" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 166 H138" stroke="#EDE6D6" stroke-width="2"/>
+          <path d="M22 166 l8 8 M42 166 l8 8 M62 166 l8 8 M82 166 l8 8 M102 166 l8 8 M122 166 l8 8" stroke="#EDE6D6" stroke-width="1" opacity="0.6"/>
+          <rect x="48" y="142" width="52" height="24" rx="3" fill="#161C38" stroke="#EDE6D6" stroke-width="2"/>
+          <path d="M74 142 L104 72" stroke="#EDE6D6" stroke-width="11"/>
+          <path d="M104 72 L196 54" stroke="#EDE6D6" stroke-width="8"/>
+          <path d="M196 54 L214 64" stroke="#EDE6D6" stroke-width="6"/>
+          <path d="M214 64 L232 56 M214 64 L229 80" stroke="#EDE6D6" stroke-width="3.5"/>
+          <path class="stroke-accent" d="M 102 142 A 28 28 0 0 0 84 116" stroke-width="1.6" stroke-dasharray="2 4"/>
+          <path class="stroke-accent" d="M 132 66 A 28 28 0 0 0 118 46" stroke-width="1.6" stroke-dasharray="2 4"/>
+          <path d="M232 70 L256 96" stroke="#EDE6D6" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+          <circle class="fill-accent" cx="74" cy="142" r="7.5"/><circle cx="74" cy="142" r="2.4" fill="#0E1226"/>
+          <circle class="fill-accent" cx="104" cy="72" r="7.5"/><circle cx="104" cy="72" r="2.4" fill="#0E1226"/>
+          <circle class="fill-accent" cx="196" cy="54" r="5.5"/><circle cx="196" cy="54" r="1.8" fill="#0E1226"/>
+          <g class="stroke-accent" stroke-width="1.4"><circle cx="260" cy="100" r="7"/><path d="M260 88 V112 M248 100 H272"/></g>
+          <g class="art-label art-label--callout" fill="#EDE6D6" stroke="none"><text x="30" y="124">J1</text><text x="92" y="52">J2</text><text x="190" y="38">J3</text><text x="260" y="130" text-anchor="middle">TARGET</text></g>
+        </svg>
+
+        <!-- Robot arm: phones -->
+        <svg class="arm arm--sm rv" aria-hidden="true" width="150" height="94" viewBox="0 0 280 176" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 166 H138" stroke="#EDE6D6" stroke-width="3"/>
+          <rect x="48" y="142" width="52" height="24" rx="3" fill="#161C38" stroke="#EDE6D6" stroke-width="3"/>
+          <path d="M74 142 L104 72" stroke="#EDE6D6" stroke-width="12"/>
+          <path d="M104 72 L196 54" stroke="#EDE6D6" stroke-width="9"/>
+          <path d="M196 54 L214 64" stroke="#EDE6D6" stroke-width="7"/>
+          <path d="M214 64 L232 56 M214 64 L229 80" stroke="#EDE6D6" stroke-width="5"/>
+          <path class="stroke-accent" d="M 102 142 A 28 28 0 0 0 84 116" stroke-width="2.4" stroke-dasharray="3 5"/>
+          <circle class="fill-accent" cx="74" cy="142" r="9"/><circle cx="74" cy="142" r="3" fill="#0E1226"/>
+          <circle class="fill-accent" cx="104" cy="72" r="9"/><circle cx="104" cy="72" r="3" fill="#0E1226"/>
+          <circle class="fill-accent" cx="196" cy="54" r="7"/>
+          <g class="stroke-accent" stroke-width="2.4"><circle cx="260" cy="100" r="9"/><path d="M260 86 V114 M246 100 H274"/></g>
+        </svg>
+      </div>
 
       <!-- 01 · Featured build -->
-      <article class="project project--featured" aria-labelledby="p1-h">
-        <span class="proj-num" aria-hidden="true">01</span>
-        <svg class="skyplot" aria-hidden="true" width="260" height="260" viewBox="0 0 260 260">
+      <article class="project project--featured tick" data-rid="p1" aria-labelledby="p1-h">
+        <span class="proj-num up" aria-hidden="true">01</span>
+        <svg class="skyplot rv" aria-hidden="true" width="260" height="260" viewBox="0 0 260 260">
           <circle cx="130" cy="130" r="120" fill="none" stroke="#EDE6D6" stroke-width="1.2" opacity="0.5"/>
           <circle cx="130" cy="130" r="80" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.5"/>
           <circle cx="130" cy="130" r="40" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.5"/>
           <path d="M130 10 V250 M10 130 H250" stroke="#3B5BDB" stroke-width="1.2"/>
           <path class="stroke-accent" d="M40 190 Q 110 40 220 80" fill="none" stroke-width="3"/>
           <circle class="fill-accent" cx="220" cy="80" r="6"/>
-          <text class="compass" x="130" y="8" fill="#EDE6D6">N</text>
+          <text class="art-label" x="130" y="8" text-anchor="middle" fill="#EDE6D6">N</text>
         </svg>
 
-        <div class="p1-head">
+        <div class="p1-head up">
           <p class="tags"><span class="tag tag--fill">Featured build</span><span class="tag">[Personal · 20XX–now]</span></p>
           <h3 id="p1-h" class="h-featured">SatCom ground station &amp; dish rotator</h3>
           <p class="lede">[One line: a home-built ground station that points a dish at satellites as they pass and receives their signal — what it does and why you built it.]</p>
         </div>
 
-        <div class="p1-gallery">
+        <div class="p1-gallery up">
           <!--
             Photo slots: to add a photo, add the "photo--filled" class to the figure,
             replace the icon <svg> with an <img>, and keep (or update) the figcaption:
             <figure class="photo photo--filled p1-main">
               <span class="tape …"></span>
-              <img src="assets/ground-station-dish.webp" alt="…" width="1200" height="800">
+              <img src="assets/ground-station-dish.webp" alt="…" width="1200" height="800" loading="lazy">
               <figcaption>…</figcaption>
             </figure>
           -->
@@ -181,7 +242,7 @@
           </figure>
         </div>
 
-        <div class="p1-detail">
+        <div class="p1-detail up">
           <figure class="photo p1-shot">
             <span class="tape tape--mid" aria-hidden="true"></span>
             <svg class="photo-icon" width="36" height="28" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M1 8 H43"/><path class="stroke-accent" d="M6 26 L14 18 L20 22 L28 12 L38 20"/></svg>
@@ -191,7 +252,7 @@
           <div class="p1-text">
             <dl class="writeup">
               <div><dt class="label">The problem</dt><dd>[Why you needed a rotator — satellites cross the sky in minutes, so the dish has to follow them.]</dd></div>
-              <div><dt class="label">What I built</dt><dd>[Mechanics, electronics and software you designed yourself.]</dd></div>
+              <div><dt class="label">What I built</dt><dd>[Mechanics, electronics and control software you designed — motors, gearing, feedback.]</dd></div>
               <div><dt class="label">Hardest problem</dt><dd>[One key decision or failure and how you fixed it.]</dd></div>
               <div><dt class="label">Result</dt><dd>[What it can do now — first pass tracked, first image or signal decoded.]</dd></div>
             </dl>
@@ -199,7 +260,9 @@
               <div><dt>Azimuth</dt><dd>[range, e.g. 0–360°]</dd></div>
               <div><dt>Elevation</dt><dd>[range]</dd></div>
               <div><dt>Band / target</dt><dd>[frequency · satellites]</dd></div>
-              <div><dt>Built with</dt><dd>[controller · motors · SDR · software]</dd></div>
+              <div><dt>Drive</dt><dd>[motors · gearing · encoders]</dd></div>
+              <div><dt>Control</dt><dd>[MCU · firmware · tracking software]</dd></div>
+              <div><dt>Radio</dt><dd>[SDR · antenna feed]</dd></div>
             </dl>
             <p class="links">
               <a class="link-primary" href="#p1">Read the build log →</a>
@@ -211,15 +274,15 @@
       </article>
 
       <!-- 02 -->
-      <article class="project project--two" aria-labelledby="p2-h">
-        <span class="proj-num proj-num--end" aria-hidden="true">02</span>
+      <article class="project project--two tick" data-rid="p2" aria-labelledby="p2-h">
+        <span class="proj-num proj-num--end up" aria-hidden="true">02</span>
         <div class="p2-body">
-          <figure class="photo p2-photo">
+          <figure class="photo p2-photo up">
             <span class="tape tape--l" aria-hidden="true"></span><span class="tape tape--r" aria-hidden="true"></span>
             <svg class="photo-icon" width="44" height="34" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
             <figcaption>[Photo or screenshot · project two · 4:3]</figcaption>
           </figure>
-          <div class="p2-card">
+          <div class="p2-card up">
             <h3 id="p2-h" class="h-project">[Project Title Two]</h3>
             <p class="summary">[One line on the problem, the approach and the result — about this long.]</p>
             <dl class="meta">
@@ -232,10 +295,10 @@
       </article>
 
       <!-- 03 -->
-      <article class="project project--three" aria-labelledby="p3-h">
-        <span class="proj-num proj-num--mid" aria-hidden="true">03</span>
+      <article class="project project--three tick" data-rid="p3" aria-labelledby="p3-h">
+        <span class="proj-num proj-num--mid up" aria-hidden="true">03</span>
         <div class="p3-body">
-          <div class="p3-photos">
+          <div class="p3-photos up">
             <figure class="photo p3-a">
               <span class="tape tape--l" aria-hidden="true"></span>
               <svg class="photo-icon" width="40" height="30" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
@@ -246,7 +309,7 @@
               <figcaption>[Detail shot · 1:1]</figcaption>
             </figure>
           </div>
-          <div class="p3-text">
+          <div class="p3-text up">
             <h3 id="p3-h" class="h-project">[Project Title Three]</h3>
             <p class="summary">[One line on a class or side project that shows range.]</p>
             <dl class="meta">
@@ -260,18 +323,18 @@
     </section>
 
     <!-- ───────── About ───────── -->
-    <section id="about" class="about" aria-labelledby="about-h">
+    <section id="about" class="about tick" data-rid="about" aria-labelledby="about-h">
       <div class="about-aside">
         <h2 id="about-h" class="riso section-h"><span class="ink-cream">About</span><span class="ink-accent" aria-hidden="true">About</span></h2>
-        <blockquote class="pull">“[A single line that sounds like you — the thing you’d say about your work over coffee.]”</blockquote>
-        <figure class="photo portrait">
+        <blockquote class="pull up">“[A single line that sounds like you — the thing you’d say about your work over coffee.]”</blockquote>
+        <figure class="photo portrait up">
           <span class="tape tape--mid" aria-hidden="true"></span>
           <figcaption>[Photo of you — at the dish, the bench or outdoors]</figcaption>
         </figure>
       </div>
-      <div class="about-body">
+      <div class="about-body up">
         <p class="about-lead">[Paragraph one: what you study, where, and what you’re working on now. Two or three sentences that name the kind of problems you like.]</p>
-        <p>[Paragraph two: how you got into radio, satellites or hardware — a moment, a person or a first project. Keep it human and specific.]</p>
+        <p>[Paragraph two: how you got into robotics, radio and satellites — a moment, a person or a first project. Keep it human and specific.]</p>
         <p>[Paragraph three: what you do outside class, and the internship or role you’re looking for next.]</p>
         <h3 class="label skills-h">Skills &amp; interests</h3>
         <ul class="chips">
@@ -288,24 +351,40 @@
 </div>
 
 <!-- ───────── Contact ───────── -->
-<section id="contact" class="contact" aria-labelledby="contact-h">
-  <svg class="contact-art" aria-hidden="true" width="520" height="460" viewBox="0 0 520 460" fill="none" stroke-linecap="round">
-    <path d="M 300 360 A 230 230 0 0 1 470 120" stroke="#0E1226" stroke-width="2" stroke-dasharray="4 10" opacity="0.5"/>
-    <path d="M 330 330 A 190 190 0 0 1 470 160" stroke="#0E1226" stroke-width="2" stroke-dasharray="4 10" opacity="0.35"/>
-    <g transform="translate(250 330) rotate(35)">
-      <path d="M -130 -50 Q 0 50 130 -50 Q 0 -12 -130 -50 Z" fill="#0E1226"/>
-      <path d="M -118 -46 L 0 -156 L 118 -46" stroke="#0E1226" stroke-width="5"/>
-      <circle cx="0" cy="-160" r="12" fill="#EDE6D6"/>
+<section id="contact" class="contact" data-rid="contact" aria-labelledby="contact-h">
+  <svg class="contact-art" aria-hidden="true" width="520" height="460" viewBox="0 0 520 460" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 340 450 A 250 250 0 0 1 515 165" stroke="#0E1226" stroke-width="2" stroke-dasharray="4 10" opacity="0.45"/>
+    <path d="M 385 450 A 200 200 0 0 1 515 215" stroke="#0E1226" stroke-width="2" stroke-dasharray="4 10" opacity="0.3"/>
+    <path class="sig" d="M 100 244 L -60 216" stroke="#0E1226" stroke-width="2.5" stroke-dasharray="6 8"/>
+    <path d="M 238 290 L 262 290 L 294 470 L 206 470 Z" fill="#0E1226"/>
+    <rect x="234" y="256" width="32" height="40" rx="5" fill="#0E1226"/>
+    <circle cx="250" cy="400" r="22" stroke="#EDE6D6" stroke-width="7" stroke-dasharray="5.5 5.13"/>
+    <circle cx="250" cy="400" r="6" fill="#EDE6D6"/>
+    <g class="cdish">
+      <g transform="translate(250 270) rotate(-80)">
+        <path d="M -120 -30 Q 0 66 120 -30 Z" fill="#0E1226"/>
+        <ellipse cx="0" cy="-30" rx="120" ry="24" fill="#232B55" stroke="#EDE6D6" stroke-width="3"/>
+        <ellipse cx="0" cy="-30" rx="78" ry="15" stroke="#EDE6D6" stroke-width="1.2" opacity="0.45"/>
+        <ellipse cx="0" cy="-30" rx="38" ry="7.5" stroke="#EDE6D6" stroke-width="1.2" opacity="0.45"/>
+        <path d="M -104 -40 L 0 -136 L 104 -40 M 0 -30 L 0 -136" stroke="#0E1226" stroke-width="4"/>
+        <rect x="-10" y="-154" width="20" height="18" rx="3" fill="#0E1226"/>
+        <circle cx="0" cy="-140" r="7" fill="#EDE6D6"/>
+      </g>
+      <circle cx="250" cy="270" r="5" fill="#EDE6D6"/>
     </g>
-    <path d="M 236 360 L 262 360 L 290 470 L 208 470 Z" fill="#0E1226"/>
+    <g class="waves" stroke="#EDE6D6" stroke-width="3">
+      <circle class="wave" cx="112" cy="246" r="40"/>
+      <circle class="wave" cx="112" cy="246" r="40"/>
+      <circle class="wave" cx="112" cy="246" r="40"/>
+    </g>
   </svg>
   <div class="contact-inner">
     <h2 id="contact-h" class="riso riso--inverse"><span class="ink-cream" aria-hidden="true">Contact</span><span class="ink-ground">Contact</span></h2>
-    <a class="email" href="mailto:">[email address]</a>
+    <a class="email rx" href="mailto:">[email address]</a>
     <ul class="contact-links">
-      <li><a class="pill" href="https://github.com/GraysonlJones">GitHub <span aria-hidden="true">↗</span></a></li>
-      <li><a class="pill" href="#linkedin">LinkedIn <span aria-hidden="true">↗</span></a></li>
-      <li><a class="pill pill--fill" id="resume" href="resume.pdf">Resume (PDF) <span aria-hidden="true">↓</span></a></li>
+      <li class="rx"><a class="pill" href="https://github.com/GraysonlJones">GitHub <span aria-hidden="true">↗</span></a></li>
+      <li class="rx"><a class="pill" href="#linkedin">LinkedIn <span aria-hidden="true">↗</span></a></li>
+      <li class="rx"><a class="pill pill--fill" id="resume" href="resume.pdf">Resume (PDF) <span aria-hidden="true">↓</span></a></li>
     </ul>
   </div>
 </section>
@@ -314,5 +393,7 @@
   <span>Grayson Jones · © 2026</span>
   <a href="#top">Back to top ↑</a>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
