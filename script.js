@@ -62,3 +62,16 @@
     }
   });
 })();
+
+// Under-construction notice: opens once per browser session. Remove at launch.
+(function () {
+  var d = document.getElementById('uc');
+  if (!d || typeof d.showModal !== 'function') return;
+  try { if (sessionStorage.getItem('uc-seen')) return; } catch (e) {}
+  d.showModal();
+  d.addEventListener('close', function () {
+    try { sessionStorage.setItem('uc-seen', '1'); } catch (e) {}
+  });
+  // Click outside the card closes it too.
+  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+})();
