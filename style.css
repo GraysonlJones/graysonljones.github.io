@@ -180,7 +180,8 @@ a:focus-visible {
   font-weight: 900;
   text-decoration: none;
 }
-.brand svg { width: 22px; height: 22px; flex: none; }
+.brand svg { width: 26px; height: 26px; flex: none; }
+.brand .stroke-accent { stroke: var(--accent); }
 
 /* Phones: the menu sits on its own row, all four sections + resume */
 .site-nav {
@@ -804,7 +805,7 @@ a:focus-visible {
 
   .site-header { padding: 14px 0; }
   .brand { gap: 10px; }
-  .brand svg { width: 26px; height: 26px; }
+  .brand svg { width: 30px; height: 30px; }
   .site-nav { width: auto; gap: 4px; border-top: 0; align-items: center; }
   .site-nav a { padding: 0 10px; }
   .nav-pdf { display: inline; }
