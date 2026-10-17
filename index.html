@@ -33,13 +33,14 @@
   <header class="site-header">
     <a class="brand" href="#top">
       <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke-linecap="round"><path d="M3 15 Q10 21 19 9" stroke="currentColor" stroke-width="2.2"/><path d="M11 15 L16 6" stroke="currentColor" stroke-width="1.6"/><circle class="fill-accent" cx="16.5" cy="5.5" r="2.2"/><path d="M10 17 L8 24 M12 17 L15 24 M6 24 H17" stroke="currentColor" stroke-width="1.6"/></svg>
-      <span><span class="brand-first">Grayson</span><span class="brand-initial" aria-hidden="true">G.</span> Jones</span>
+      <span>Grayson Jones</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
-      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a class="nav-resume" href="resume.pdf">Resume</a>
+      <a class="nav-resume" href="resume.pdf">Resume <span class="nav-pdf">(PDF)</span></a>
     </nav>
   </header>
 
@@ -47,6 +48,7 @@
     <!-- ───────── Hero ───────── -->
     <section class="hero" aria-labelledby="hero-name">
       <div class="hero-text">
+        <p class="eyebrow label rv">[Major] student · [University] · Class of [20XX]</p>
         <h1 id="hero-name" class="hero-name">
           <span class="riso"><span class="ink-cream">Grayson</span><span class="ink-accent" aria-hidden="true">Grayson</span></span>
           <span class="riso riso--indent"><span class="ink-cream">Jones.</span><span class="ink-accent" aria-hidden="true">Jones.</span></span>
@@ -85,9 +87,10 @@
           <p class="hero-role rv">[Your field, in one line — e.g. engineering student building robots, radio &amp; embedded systems]</p>
           <div class="hero-copy rv">
             <p>[Two sentences: what you’re studying, what you love building, and what you’re looking for next. Short enough to read on a phone in one breath.]</p>
+            <p class="looking"><span class="looking-dot" aria-hidden="true"></span><span><strong>Looking for:</strong> [Summer 20XX internship in X] · [Location / remote]</span></p>
             <div class="hero-cta">
-              <a class="btn btn--fill" href="#work">See the work <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v12M1.5 7.5 7 13l5.5-5.5"/></svg></a>
-              <a class="btn btn--line" href="#contact">Get in touch</a>
+              <a class="btn btn--fill" href="#projects">See my projects <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v12M1.5 7.5 7 13l5.5-5.5"/></svg></a>
+              <a class="btn btn--line" href="resume.pdf">Download resume</a>
             </div>
           </div>
         </div>
@@ -156,10 +159,22 @@
       </svg>
     </section>
 
-    <!-- ───────── Work ───────── -->
-    <section id="work" class="work" aria-labelledby="work-h">
+    <!-- ───────── Quick facts ───────── -->
+    <section class="facts tick" aria-label="Quick facts">
+      <dl class="facts-list">
+        <div><dt class="label">School</dt><dd>[University]</dd></div>
+        <div><dt class="label">Studying</dt><dd>[Major · Minor]</dd></div>
+        <div><dt class="label">Graduating</dt><dd>[Month 20XX]</dd></div>
+        <div><dt class="label">Focus</dt><dd>[e.g. robotics, RF, embedded]</dd></div>
+        <div><dt class="label">Based in</dt><dd>[City]</dd></div>
+        <div><dt class="label">Open to</dt><dd>[Remote · relocate]</dd></div>
+      </dl>
+    </section>
+
+    <!-- ───────── Projects ───────── -->
+    <section id="projects" class="work" aria-labelledby="work-h">
       <div class="work-head" data-rid="work">
-        <h2 id="work-h" class="riso section-h"><span class="ink-cream">Work</span><span class="ink-accent" aria-hidden="true">Work</span></h2>
+        <h2 id="work-h" class="riso section-h"><span class="ink-cream">Projects</span><span class="ink-accent" aria-hidden="true">Projects</span></h2>
 
         <!-- Robot arm: wide screens -->
         <svg class="arm arm--lg rv" aria-hidden="true" width="310" height="176" viewBox="0 0 310 176" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -252,9 +267,10 @@
           <div class="p1-text">
             <dl class="writeup">
               <div><dt class="label">The problem</dt><dd>[Why you needed a rotator — satellites cross the sky in minutes, so the dish has to follow them.]</dd></div>
+              <div><dt class="label">My part</dt><dd>[What you personally did — solo, or your role on the team.]</dd></div>
               <div><dt class="label">What I built</dt><dd>[Mechanics, electronics and control software you designed — motors, gearing, feedback.]</dd></div>
-              <div><dt class="label">Hardest problem</dt><dd>[One key decision or failure and how you fixed it.]</dd></div>
-              <div><dt class="label">Result</dt><dd>[What it can do now — first pass tracked, first image or signal decoded.]</dd></div>
+              <div><dt class="label">Key decision</dt><dd>[One choice you made, or a failure you fixed, and why.]</dd></div>
+              <div><dt class="label">Result · what I learned</dt><dd>[What it can do now — first pass tracked, first signal decoded — plus one lesson.]</dd></div>
             </dl>
             <dl class="specs">
               <div><dt>Azimuth</dt><dd>[range, e.g. 0–360°]</dd></div>
@@ -283,13 +299,14 @@
             <figcaption>[Photo or screenshot · project two · 4:3]</figcaption>
           </figure>
           <div class="p2-card up">
+            <p class="tags"><span class="tag">[Class project]</span><span class="tag">[Team of 3]</span></p>
             <h3 id="p2-h" class="h-project">[Project Title Two]</h3>
-            <p class="summary">[One line on the problem, the approach and the result — about this long.]</p>
+            <p class="summary">[Problem → what you built → result, in one line.]</p>
             <dl class="meta">
               <div><dt>My part</dt><dd>[Role · team size]</dd></div>
-              <div><dt>Built with</dt><dd>[Tools]</dd></div>
+              <div><dt>Built with</dt><dd>[Tech · tech · tech]</dd></div>
             </dl>
-            <a class="link-primary" href="#p2">Open the project →</a>
+            <p class="links"><a class="link-primary" href="#p2">Write-up →</a><a href="#p2-code">Code ↗</a></p>
           </div>
         </div>
       </article>
@@ -310,16 +327,73 @@
             </figure>
           </div>
           <div class="p3-text up">
+            <p class="tags"><span class="tag">[Personal]</span><span class="tag">[Solo]</span></p>
             <h3 id="p3-h" class="h-project">[Project Title Three]</h3>
-            <p class="summary">[One line on a class or side project that shows range.]</p>
+            <p class="summary">[Something you made because you wanted to — shows initiative.]</p>
             <dl class="meta">
               <div><dt>My part</dt><dd>[Solo]</dd></div>
-              <div><dt>Built with</dt><dd>[Tools]</dd></div>
+              <div><dt>Built with</dt><dd>[Tech · tech]</dd></div>
             </dl>
-            <a class="link-primary" href="#p3">Open the project →</a>
+            <p class="links"><a class="link-primary" href="#p3">Write-up →</a><a href="#p3-demo">Demo ↗</a></p>
           </div>
         </div>
       </article>
+
+      <!-- 04 -->
+      <article class="project project--four tick" data-rid="p4" aria-labelledby="p4-h">
+        <span class="proj-num up" aria-hidden="true">04</span>
+        <div class="p4-body">
+          <figure class="photo p4-photo up">
+            <span class="tape tape--l" aria-hidden="true"></span>
+            <svg class="photo-icon" width="44" height="34" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
+            <figcaption>[Screenshot or demo GIF · project four · 16:9]</figcaption>
+          </figure>
+          <div class="p4-text up">
+            <p class="tags"><span class="tag">[Hackathon · 48 hrs]</span><span class="tag tag--fill">[Award?]</span></p>
+            <h3 id="p4-h" class="h-project">[Project Title Four]</h3>
+            <p class="summary">[What you shipped under time pressure.]</p>
+            <dl class="meta">
+              <div><dt>My part</dt><dd>[Role · team size]</dd></div>
+              <div><dt>Built with</dt><dd>[Tech · tech]</dd></div>
+            </dl>
+            <p class="links"><a class="link-primary" href="#p4">Write-up →</a><a href="#p4-code">Code ↗</a></p>
+          </div>
+        </div>
+      </article>
+
+      <p class="more-github">
+        <a class="link-primary" href="https://github.com/GraysonlJones">More on GitHub ↗</a>
+        <span class="label more-note">[Pin your best repos, each with a clear README]</span>
+      </p>
+    </section>
+
+    <!-- ───────── Experience ───────── -->
+    <section id="experience" class="experience tick" data-rid="experience" aria-labelledby="exp-h">
+      <div class="exp-aside">
+        <h2 id="exp-h" class="riso section-h"><span class="ink-cream">Experience</span><span class="ink-accent" aria-hidden="true">Experience</span></h2>
+        <p class="exp-intro up">[One sentence framing — e.g. where you’ve worked, led or taught so far.]</p>
+      </div>
+      <ol class="exp-list up">
+        <li class="exp-item">
+          <p class="exp-top"><span class="tag">Internship</span><span class="exp-date">[Summer 20XX]</span></p>
+          <h3 class="exp-role">[Role] <span class="exp-org">· [Company]</span></h3>
+          <p>[One line: what you did and a result.]</p>
+        </li>
+        <li class="exp-item">
+          <p class="exp-top"><span class="tag">Teaching / research</span><span class="exp-date">[20XX–now]</span></p>
+          <h3 class="exp-role">[TA for course · Research assistant] <span class="exp-org">· [Dept / Lab]</span></h3>
+          <p>[One line.]</p>
+        </li>
+        <li class="exp-item">
+          <p class="exp-top"><span class="tag">Leadership</span><span class="exp-date">[20XX–20XX]</span></p>
+          <h3 class="exp-role">[Officer role] <span class="exp-org">· [Club / society]</span></h3>
+          <p>[One line: event run, members, budget.]</p>
+        </li>
+        <li class="exp-item">
+          <p class="exp-top"><span class="tag tag--fill">Awards &amp; certifications</span><span class="exp-date">[20XX]</span></p>
+          <h3 class="exp-role">[Hackathon placing · Dean’s list · Certificate]</h3>
+        </li>
+      </ol>
     </section>
 
     <!-- ───────── About ───────── -->
@@ -336,15 +410,34 @@
         <p class="about-lead">[Paragraph one: what you study, where, and what you’re working on now. Two or three sentences that name the kind of problems you like.]</p>
         <p>[Paragraph two: how you got into robotics, radio and satellites — a moment, a person or a first project. Keep it human and specific.]</p>
         <p>[Paragraph three: what you do outside class, and the internship or role you’re looking for next.]</p>
-        <h3 class="label skills-h">Skills &amp; interests</h3>
+
+        <h3 class="label skills-h">Skills</h3>
+        <dl class="skills">
+          <div><dt>Languages</dt><dd>[…]</dd></div>
+          <div><dt>Frameworks</dt><dd>[…]</dd></div>
+          <div><dt>Tools</dt><dd>[…]</dd></div>
+        </dl>
+
+        <h3 class="label skills-h">Relevant coursework</h3>
         <ul class="chips">
-          <li>[Skill]</li>
-          <li class="chip--accent chip--tilt-l">[Skill]</li>
-          <li>[Tool]</li>
-          <li class="chip--cream">[Tool]</li>
+          <li>[Course]</li>
+          <li class="chip--cream">[Course]</li>
+          <li>[Course]</li>
+          <li class="chip--accent chip--tilt-l">[Course]</li>
+        </ul>
+
+        <h3 class="label skills-h">Outside class</h3>
+        <ul class="chips">
           <li class="chip--tilt-r">[Interest]</li>
           <li>[Interest]</li>
+          <li>[Interest]</li>
         </ul>
+
+        <figure class="testimonial">
+          <figcaption class="label">Optional · one short quote</figcaption>
+          <blockquote>“[A line from a professor, TA supervisor or teammate.]”</blockquote>
+          <p class="testimonial-by">[Name], [Title]</p>
+        </figure>
       </div>
     </section>
   </main>
@@ -380,7 +473,13 @@
   </svg>
   <div class="contact-inner">
     <h2 id="contact-h" class="riso riso--inverse"><span class="ink-cream" aria-hidden="true">Contact</span><span class="ink-ground">Contact</span></h2>
-    <a class="email rx" href="mailto:">[email address]</a>
+    <p class="invite rx">[Short invitation to get in touch]</p>
+    <p class="open-to rx">[What you’re open to — internships, co-ops, new-grad roles, collaborations — and when you’re available.]</p>
+    <p class="email-row rx">
+      <a class="email" href="mailto:">[name@email.com]</a>
+      <button class="copy-btn" type="button">Copy email</button>
+      <span class="copy-status" role="status" aria-live="polite"></span>
+    </p>
     <ul class="contact-links">
       <li class="rx"><a class="pill" href="https://github.com/GraysonlJones">GitHub <span aria-hidden="true">↗</span></a></li>
       <li class="rx"><a class="pill" href="#linkedin">LinkedIn <span aria-hidden="true">↗</span></a></li>
@@ -391,6 +490,7 @@
 
 <footer class="site-footer">
   <span>Grayson Jones · © 2026</span>
+  <span>Last updated [Month Year] · <a href="https://github.com/GraysonlJones/graysonljones.github.io">Source on GitHub</a></span>
   <a href="#top">Back to top ↑</a>
 </footer>
 

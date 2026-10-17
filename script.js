@@ -26,3 +26,39 @@
   (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve())
     .then(function () { setTimeout(settle, 250); });
 })();
+
+// "Copy email" button: copies the address shown in the contact link.
+(function () {
+  var btn = document.querySelector('.copy-btn');
+  var link = document.querySelector('.email');
+  var status = document.querySelector('.copy-status');
+  if (!btn || !link) return;
+  var timer;
+  var say = function (msg) {
+    if (!status) return;
+    status.textContent = msg;
+    clearTimeout(timer);
+    timer = setTimeout(function () { status.textContent = ''; }, 2500);
+  };
+  btn.addEventListener('click', function () {
+    var address = link.textContent.trim();
+    var fallback = function () {
+      var t = document.createElement('textarea');
+      t.value = address;
+      t.setAttribute('readonly', '');
+      t.style.position = 'absolute';
+      t.style.left = '-9999px';
+      document.body.appendChild(t);
+      t.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(t);
+      say(ok ? 'Copied' : 'Press ⌘C / Ctrl+C to copy');
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(address).then(function () { say('Copied'); }, fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
