@@ -471,6 +471,8 @@ a:focus-visible {
 
 /* 02 */
 .p2-photo { aspect-ratio: 4 / 3; margin-right: 16px; transform: rotate(1deg); }
+.p2-photo.photo--filled { aspect-ratio: 1310 / 1378; }   /* Janus screenshot: show the whole window, no crop */
+.p2-photo.photo--filled img { object-fit: contain; }
 .p2-card {
   position: relative;
   z-index: 3;
