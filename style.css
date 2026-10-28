@@ -675,6 +675,7 @@ a:focus-visible {
 }
 
 .invite {
+  max-width: 18ch;   /* wraps before the dish art on the right */
   margin: 28px 0 12px;
   font-family: var(--font-display);
   font-weight: 700;
