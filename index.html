@@ -592,8 +592,10 @@
     <p class="invite rx">Building something with robots, radios or people? Let’s talk.</p>
     <p class="open-to rx">I’m looking for a Summer 2027 internship in robotics or embedded systems, on-site in New England or remote, and I’m always up for collaborating on a build.</p>
     <p class="email-row rx">
-      <a class="email" href="mailto:graysonljones@gmail.com">graysonljones@gmail.com</a>
-      <button class="copy-btn" type="button">Copy email</button>
+      <!-- Address is assembled by script.js so it never appears in the page source (anti-scraping) -->
+      <a class="email" data-mbox="senojlnosyarg" data-host="moc.liamg" hidden></a>
+      <button class="copy-btn" type="button" hidden>Copy email</button>
+      <noscript><span class="email-nojs">Email me via the address on my <a href="resume.pdf">resume</a>, or message me on <a href="https://www.linkedin.com/in/grayson-l-jones">LinkedIn</a>.</span></noscript>
       <span class="copy-status" role="status" aria-live="polite"></span>
     </p>
     <ul class="contact-links">

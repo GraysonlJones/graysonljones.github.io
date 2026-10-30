@@ -44,6 +44,20 @@
   update();
 })();
 
+// Email: stored reversed and split in data attributes, so the plain address (and its
+// user@host pattern) never appears in the HTML that most scrapers read. Built here at load.
+(function () {
+  var link = document.querySelector('.email');
+  if (!link) return;
+  var flip = function (s) { return s.split('').reverse().join(''); };
+  var address = flip(link.dataset.mbox) + String.fromCharCode(64) + flip(link.dataset.host);
+  link.textContent = address;
+  link.href = 'mailto:' + address;
+  link.hidden = false;
+  var btn = document.querySelector('.copy-btn');
+  if (btn) btn.hidden = false;
+})();
+
 // "Copy email" button: copies the address shown in the contact link.
 (function () {
   var btn = document.querySelector('.copy-btn');

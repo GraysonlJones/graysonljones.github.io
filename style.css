@@ -908,6 +908,11 @@ a:focus-visible {
   text-decoration-thickness: 3px;
   overflow-wrap: anywhere;
 }
+/* Both stay hidden until script.js assembles the address */
+.email[hidden],
+.copy-btn[hidden] { display: none; }
+.email-nojs { font-size: 20px; }
+.email-nojs a { text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .contact .email:hover { color: var(--cream); }
 
 .contact-links {
