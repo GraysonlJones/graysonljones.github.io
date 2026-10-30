@@ -39,6 +39,7 @@
     <nav class="site-nav" aria-label="Primary">
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#writeups">Writeups</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a class="nav-resume" href="resume.pdf">Resume <span class="nav-pdf">(PDF)</span></a>
@@ -93,6 +94,10 @@
               <a class="btn btn--fill" href="#projects">See my projects <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v12M1.5 7.5 7 13l5.5-5.5"/></svg></a>
               <a class="btn btn--line" href="resume.pdf">Download resume</a>
             </div>
+            <p class="hero-social label">
+              <a href="https://github.com/GraysonlJones">GitHub ↗︎</a>
+              <a href="https://www.linkedin.com/in/grayson-l-jones">LinkedIn ↗︎</a>
+            </p>
           </div>
         </div>
       </div>
@@ -166,7 +171,7 @@
         <div><dt class="label">School</dt><dd>Worcester Polytechnic Institute (WPI)</dd></div>
         <div><dt class="label">Studying</dt><dd>Electrical &amp; Computer Engineering · Robotics Engineering</dd></div>
         <div><dt class="label">Graduating</dt><dd>May 2029</dd></div>
-        <div><dt class="label">Focus</dt><dd>Robotics · Embedded systems · Telecommunications · Human-robot interaction</dd></div>
+        <div><dt class="label">Focus</dt><dd>Robotics · Telecommunications · Human-robot interaction</dd></div>
         <div><dt class="label">Based in</dt><dd>Worcester, MA · from Boise, ID</dd></div>
         <div><dt class="label">Open to</dt><dd>New England on-site · Remote</dd></div>
       </dl>
@@ -215,14 +220,27 @@
       <!-- 01 · Featured build -->
       <article class="project project--featured tick" data-rid="p1" aria-labelledby="p1-h">
         <span class="proj-num up" aria-hidden="true">01</span>
-        <svg class="skyplot rv" aria-hidden="true" width="260" height="260" viewBox="0 0 260 260">
+        <!-- Sky plot from the WPI ground site, 24 h from 2026-10-28 18:53 UTC: real SGP4 look angles from the MATLAB orbit project.
+             Static snapshot: re-run the MATLAB export and update the date label to refresh it.
+             (Starlink-33681 in red, GPS BIIR-5 in cream; passes that never clear 10° elevation are left out) -->
+        <svg class="skyplot rv" role="img" aria-label="Sky plot over WPI for 24 hours from October 28, 2026: Starlink-33681 passes in red, GPS BIIR-5 in cream." width="260" height="318" viewBox="0 0 260 318">
           <circle cx="130" cy="130" r="120" fill="none" stroke="#EDE6D6" stroke-width="1.2" opacity="0.5"/>
           <circle cx="130" cy="130" r="80" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.5"/>
           <circle cx="130" cy="130" r="40" fill="none" stroke="#EDE6D6" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.5"/>
           <path d="M130 10 V250 M10 130 H250" stroke="#3B5BDB" stroke-width="1.2"/>
-          <path class="stroke-accent" d="M40 190 Q 110 40 220 80" fill="none" stroke-width="3"/>
-          <circle class="fill-accent" cx="220" cy="80" r="6"/>
+          <path d="M10.7 118.5 C11.5 117.6 13.9 114.9 15.5 113.3 C17.2 111.6 18.9 110.0 20.6 108.5 C22.3 107.0 24.1 105.6 25.9 104.3 C27.7 103.0 29.6 101.8 31.4 100.7 C33.3 99.5 35.2 98.5 37.1 97.6 C39.0 96.6 40.9 95.8 42.9 95.1 C44.8 94.3 46.8 93.7 48.7 93.2 C50.7 92.6 52.7 92.2 54.6 91.8 C56.6 91.5 58.6 91.3 60.5 91.1 C62.5 91.0 64.4 91.0 66.3 91.0 C68.3 91.1 70.2 91.3 72.1 91.5 C74.0 91.8 75.9 92.1 77.7 92.6 C79.6 93.0 81.4 93.6 83.2 94.2 C85.0 94.9 86.7 95.6 88.5 96.4 C90.2 97.3 91.9 98.2 93.5 99.2 C95.2 100.1 96.8 101.2 98.3 102.4 C99.9 103.5 101.4 104.8 102.9 106.1 C104.4 107.4 105.8 108.8 107.2 110.2 C108.5 111.7 109.9 113.2 111.1 114.8 C112.4 116.4 113.6 118.0 114.8 119.7 C116.0 121.4 117.1 123.2 118.2 125.0 C119.2 126.8 120.2 128.6 121.2 130.5 C122.2 132.4 123.1 134.4 123.9 136.4 C124.8 138.3 125.6 140.4 126.4 142.4 C127.1 144.5 127.8 146.5 128.5 148.6 C129.2 150.7 129.8 152.8 130.4 155.0 C131.0 157.1 131.5 159.3 132.0 161.4 C132.5 163.6 132.9 165.8 133.4 167.9 C133.8 170.1 134.2 172.3 134.5 174.5 C134.9 176.7 135.2 178.9 135.6 181.0 C135.9 183.2 136.2 185.4 136.4 187.5 C136.7 189.7 137.0 191.8 137.2 194.0 C137.5 196.1 137.7 198.2 138.0 200.3 C138.2 202.4 138.4 204.5 138.7 206.6 C138.9 208.7 139.2 210.7 139.4 212.7 C139.7 214.8 140.0 216.8 140.3 218.7 C140.6 220.7 140.9 222.7 141.3 224.6 C141.7 226.5 142.0 228.4 142.5 230.3 C142.9 232.1 143.4 233.9 143.9 235.7 C144.5 237.5 145.1 239.3 145.7 241.0 C146.4 242.7 147.3 244.8 147.9 246.0 C148.4 247.3 148.9 248.0 149.1 248.4" fill="none" stroke="#EDE6D6" stroke-width="1.6"/>
+          <path class="stroke-accent" d="M32.2 67.9 C32.7 69.1 34.1 72.0 35.4 74.8 C36.6 77.7 37.8 80.5 39.7 84.9 C41.6 89.2 43.0 93.5 46.9 100.9 C50.9 108.3 54.2 117.5 63.3 129.3 C72.4 141.1 87.7 159.8 101.3 171.6 C115.0 183.5 133.5 193.8 145.2 200.5 C156.9 207.1 164.7 208.8 171.6 211.4 C178.5 214.1 182.6 215.0 186.7 216.3 C190.8 217.6 193.6 218.4 196.3 219.3 C199.1 220.1 202.0 221.2 203.2 221.6" fill="none" stroke-width="1.6"/>
+          <path class="stroke-accent" d="M43.2 208.6 C44.1 208.1 46.4 206.5 48.4 205.2 C50.4 203.8 52.5 202.5 55.5 200.7 C58.5 198.8 61.3 197.2 66.6 193.8 C72.0 190.4 76.8 188.0 87.6 180.5 C98.4 173.1 116.1 161.2 131.4 149.1 C146.6 137.0 167.5 118.3 179.1 107.7 C190.8 97.1 195.9 91.0 201.4 85.4 C206.9 79.8 209.2 77.2 212.1 74.2 C215.0 71.2 216.8 69.4 218.7 67.5 C220.6 65.6 222.8 63.6 223.6 62.8" fill="none" stroke-width="3"/>
+          <path class="stroke-accent" d="M11.7 127.4 C12.7 125.6 15.1 120.9 17.5 116.9 C20.0 112.9 22.4 108.6 26.2 103.4 C29.9 98.2 33.8 92.3 40.0 85.9 C46.2 79.5 53.6 71.6 63.3 65.0 C73.0 58.4 85.9 50.8 98.1 46.2 C110.4 41.6 125.1 38.7 136.8 37.3 C148.6 35.9 159.4 37.0 168.4 37.7 C177.3 38.5 184.3 40.4 190.6 41.9 C196.8 43.3 201.6 45.0 206.1 46.5 C210.6 47.9 215.5 49.9 217.4 50.6" fill="none" stroke-width="1.6"/>
+          <path class="stroke-accent" d="M30.1 66.9 C32.2 65.4 37.5 60.9 42.3 57.7 C47.2 54.4 52.5 50.8 59.1 47.4 C65.8 43.9 73.4 40.1 82.3 37.2 C91.1 34.4 101.7 31.5 112.3 30.4 C122.9 29.2 135.2 29.1 145.9 30.3 C156.6 31.4 167.5 34.2 176.5 37.1 C185.6 40.0 193.5 44.0 200.3 47.5 C207.1 51.1 212.5 54.9 217.5 58.3 C222.4 61.7 227.9 66.3 229.9 68.0" fill="none" stroke-width="1.6"/>
+          <path class="stroke-accent" d="M42.1 50.8 C43.9 50.1 48.7 48.3 53.0 47.0 C57.3 45.6 61.8 44.1 67.9 42.7 C73.9 41.3 80.5 39.5 89.2 38.8 C97.9 38.0 108.4 36.9 120.1 38.2 C131.8 39.6 146.7 42.2 159.2 46.9 C171.8 51.5 185.3 59.4 195.4 66.2 C205.4 73.1 213.1 81.4 219.4 88.0 C225.8 94.7 229.7 100.8 233.5 106.2 C237.3 111.5 239.7 115.9 242.0 120.0 C244.4 124.1 246.8 128.8 247.7 130.6" fill="none" stroke-width="1.6"/>
+          <circle class="fill-accent" cx="131.4" cy="149.1" r="5.5"/>
           <text class="art-label" x="130" y="8" text-anchor="middle" fill="#EDE6D6">N</text>
+          <g class="art-label art-label--sm" fill="#EDE6D6">
+            <text x="10" y="272" fill="#EDE6D6" opacity="0.7">SKY OVER WPI · OCT 28–29, 2026</text>
+            <path class="stroke-accent" d="M10 290 H34" stroke-width="3"/><text x="42" y="294">STARLINK-33681 · LOW EARTH ORBIT</text>
+            <path d="M10 308 H34" stroke="#EDE6D6" stroke-width="1.6"/><text x="42" y="312">GPS BIIR-5 · NAVIGATION SATELLITE</text>
+          </g>
         </svg>
 
         <div class="p1-head up">
@@ -345,31 +363,15 @@
       </article>
 
       <!-- 04 -->
-      <article class="project project--four tick" data-rid="p4" aria-labelledby="p4-h">
-        <span class="proj-num up" aria-hidden="true">04</span>
-        <div class="p4-body">
-          <figure class="photo p4-photo up">
-            <span class="tape tape--l" aria-hidden="true"></span>
-            <svg class="photo-icon" width="44" height="34" viewBox="0 0 44 34" aria-hidden="true" fill="none" stroke="#EDE6D6" stroke-width="1.8"><rect x="1" y="1" width="42" height="32" rx="3"/><path d="M4 28 L16 15 L24 23 L30 17 L40 28"/><circle class="fill-accent" cx="32" cy="9" r="3.5" stroke="none"/></svg>
-            <figcaption>Planned photo</figcaption>
-          </figure>
-          <div class="p4-text up">
-            <p class="tags"><span class="tag">[Hackathon · 48 hrs]</span><span class="tag tag--fill">[Award?]</span></p>
-            <h3 id="p4-h" class="h-project">[Project Title Four]</h3>
-            <p class="summary">[What you shipped under time pressure.]</p>
-            <dl class="meta">
-              <div><dt>My part</dt><dd>[Role · team size]</dd></div>
-              <div><dt>Built with</dt><dd>[Tech · tech]</dd></div>
-            </dl>
-            <p class="links"><a class="link-primary" href="#p4">Write-up →︎</a><a href="#p4-code">Code ↗︎</a></p>
-          </div>
+      <article class="project project--more tick" data-rid="p4" aria-labelledby="p4-h">
+        <span class="proj-num up" aria-hidden="true">04+</span>
+        <div class="more-card up">
+          <p class="tags"><span class="tag">In the workshop</span></p>
+          <h3 id="p4-h" class="h-project">More builds, write-ups pending.</h3>
+          <p class="summary">I’ve finished more projects than the ones above. I just haven’t written them up yet. Write-ups are on the way. Until then, feel free to ask me about them.</p>
+          <p class="links"><a class="link-primary" href="#contact">Ask me about them →︎</a></p>
         </div>
       </article>
-
-      <p class="more-github">
-        <a class="link-primary" href="https://github.com/GraysonlJones">More on GitHub ↗︎</a>
-        <span class="label more-note">[Pin your best repos, each with a clear README]</span>
-      </p>
     </section>
 
     <!-- ───────── Experience ───────── -->
@@ -401,19 +403,129 @@
       </ol>
     </section>
 
+    <!-- ───────── Writeups ───────── -->
+    <!--
+      To add a writeup: put the PDF in writeups/ (export slide decks to PDF first),
+      then copy an entry into the right folder and drop the "wu-entry--draft" class:
+      <li class="wu-entry">
+        <a class="wu-open" href="writeups/my-file.pdf">
+          <span class="wu-meta"><span class="wu-kind">PDF</span><span class="wu-date">Oct 2026</span></span>
+          <span class="wu-title">Title</span>
+          <span class="wu-sum">One-line summary.</span>
+        </a>
+      </li>
+    -->
+    <section id="writeups" class="writeups tick" data-rid="writeups" aria-labelledby="wu-h">
+      <div class="wu-aside">
+        <h2 id="wu-h" class="riso section-h"><span class="ink-cream">Writeups</span><span class="ink-accent" aria-hidden="true">Writeups</span></h2>
+        <p class="wu-intro up">Papers, slide decks and essays, filed three ways. Pick one to read it here.</p>
+      </div>
+
+      <div class="wu-body up">
+        <div class="wu-tabs" role="tablist" aria-label="Writeup folders" hidden>
+          <button class="wu-tab" type="button" role="tab" id="wu-tab-academic" aria-controls="wu-academic" aria-selected="true">Academic</button>
+          <button class="wu-tab" type="button" role="tab" id="wu-tab-personal" aria-controls="wu-personal" aria-selected="false" tabindex="-1">Personal</button>
+          <button class="wu-tab" type="button" role="tab" id="wu-tab-nontech" aria-controls="wu-nontech" aria-selected="false" tabindex="-1">Non-technical</button>
+        </div>
+
+        <div class="wu-folders">
+          <div class="wu-folder" id="wu-academic" role="tabpanel" aria-labelledby="wu-tab-academic">
+            <h3 class="wu-folder-h label">Academic</h3>
+            <ol class="wu-list">
+              <li class="wu-entry">
+                <a class="wu-open" href="resume.pdf">
+                  <span class="wu-meta"><span class="wu-kind">PDF</span><span class="wu-date">Oct 2026</span></span>
+                  <span class="wu-title">Resume</span>
+                  <span class="wu-sum">Education, experience and skills on one page. (Example entry.)</span>
+                </a>
+              </li>
+              <li class="wu-entry wu-entry--draft">
+                <a class="wu-open" href="writeups/placeholder.pdf">
+                  <span class="wu-meta"><span class="wu-kind">PDF</span><span class="wu-date">Coming soon</span></span>
+                  <span class="wu-title">[Course paper or lab report]</span>
+                  <span class="wu-sum">Placeholder · one line on what it covers.</span>
+                </a>
+              </li>
+              <li class="wu-entry wu-entry--draft">
+                <a class="wu-open" href="writeups/placeholder.pdf">
+                  <span class="wu-meta"><span class="wu-kind">Slides</span><span class="wu-date">Coming soon</span></span>
+                  <span class="wu-title">[Class presentation]</span>
+                  <span class="wu-sum">Placeholder · one line on what it covers.</span>
+                </a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="wu-folder" id="wu-personal" role="tabpanel" aria-labelledby="wu-tab-personal">
+            <h3 class="wu-folder-h label">Personal</h3>
+            <ol class="wu-list">
+              <li class="wu-entry wu-entry--draft">
+                <a class="wu-open" href="writeups/placeholder.pdf">
+                  <span class="wu-meta"><span class="wu-kind">PDF</span><span class="wu-date">Coming soon</span></span>
+                  <span class="wu-title">[Project build log]</span>
+                  <span class="wu-sum">Placeholder · one line on what it covers.</span>
+                </a>
+              </li>
+              <li class="wu-entry wu-entry--draft">
+                <a class="wu-open" href="writeups/placeholder.pdf">
+                  <span class="wu-meta"><span class="wu-kind">Slides</span><span class="wu-date">Coming soon</span></span>
+                  <span class="wu-title">[Design review deck]</span>
+                  <span class="wu-sum">Placeholder · one line on what it covers.</span>
+                </a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="wu-folder" id="wu-nontech" role="tabpanel" aria-labelledby="wu-tab-nontech">
+            <h3 class="wu-folder-h label">Non-technical</h3>
+            <ol class="wu-list">
+              <li class="wu-entry wu-entry--draft">
+                <a class="wu-open" href="writeups/placeholder.pdf">
+                  <span class="wu-meta"><span class="wu-kind">PDF</span><span class="wu-date">Coming soon</span></span>
+                  <span class="wu-title">[Tech News article or op-ed]</span>
+                  <span class="wu-sum">Placeholder · one line on what it covers.</span>
+                </a>
+              </li>
+              <li class="wu-entry wu-entry--draft">
+                <a class="wu-open" href="writeups/placeholder.pdf">
+                  <span class="wu-meta"><span class="wu-kind">PDF</span><span class="wu-date">Coming soon</span></span>
+                  <span class="wu-title">[Essay]</span>
+                  <span class="wu-sum">Placeholder · one line on what it covers.</span>
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Reader: script.js loads the chosen PDF here on wide screens; phones open the PDF directly -->
+        <div class="wu-reader" hidden>
+          <div class="wu-reader-bar">
+            <p class="wu-reader-title label" aria-live="polite"></p>
+            <p class="wu-reader-actions label">
+              <a class="wu-full" href="#" target="_blank" rel="noopener">Open full screen ↗︎</a>
+              <a class="wu-dl" href="#" download>Download ↓︎</a>
+              <button class="wu-close" type="button" aria-label="Close reader">✕︎</button>
+            </p>
+          </div>
+          <iframe class="wu-frame" title="Writeup viewer"></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- ───────── About ───────── -->
     <section id="about" class="about tick" data-rid="about" aria-labelledby="about-h">
       <div class="about-aside">
         <h2 id="about-h" class="riso section-h"><span class="ink-cream">About</span><span class="ink-accent" aria-hidden="true">About</span></h2>
-        <blockquote class="pull up">“[A single line that sounds like you — the thing you’d say about your work over coffee.]”</blockquote>
-        <figure class="photo portrait up">
+        <blockquote class="pull up">“A learning experience is one of those things that says, 'You know that thing you just did? Don't do that.” - Douglas Adams</blockquote>
+        <figure class="photo photo--filled portrait up">
           <span class="tape tape--mid" aria-hidden="true"></span>
-          <figcaption>Planned photo</figcaption>
+          <img src="assets/portrait.jpg" alt="Grayson smiling outdoors in a black hoodie, with snow falling and snow-covered pines behind him." width="640" height="800" loading="lazy">
+          <figcaption>Grayson Jones</figcaption>
         </figure>
       </div>
       <div class="about-body up">
         <p class="about-lead">I’m studying Electrical &amp; Computer Engineering and Robotics Engineering at WPI, Class of 2029. Right now I’m building a satellite ground station and dish rotator as an independent study, and working as a research assistant in the RoboCare Lab.</p>
-        <p>[Paragraph two: how you got into robotics, radio and satellites — a moment, a person or a first project. Keep it human and specific.]</p>
+        <p>When I first entered high school I sat next to a random kid in class. He invited me to join his robotics team. Four years later I was graduating from high school and wanting to pursue robotics as a career. Robotics blends three main diciplines, Mechanical engineering, Computer Science, and Electrical Engineering. I knew about the physical systems, I knew about the computer systems, but the electrical systems were still a mystery to me. After diving into the basics it quickly became clear Electrical engineering in robotics was the intersection of physics and computers. I've been hooked since.  </p>
         <p>Outside class I edit news and op-eds for Tech News, give campus tours with Crimson Key, and sit on the Student Government’s Student Affairs Committee. Next, I’m looking for a Summer 2027 internship in robotics or embedded systems.</p>
 
         <h3 class="label skills-h">Skills</h3>
@@ -442,12 +554,6 @@
           <li>Student Government · Honorary Senator</li>
           <li>Undergraduate Admissions · Summer Associate</li>
         </ul>
-
-        <figure class="testimonial">
-          <figcaption class="label">Optional · one short quote</figcaption>
-          <blockquote>“[A line from a professor, TA supervisor or teammate.]”</blockquote>
-          <p class="testimonial-by">[Name], [Title]</p>
-        </figure>
       </div>
     </section>
   </main>

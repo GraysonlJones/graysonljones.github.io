@@ -1,3 +1,4 @@
 .DS_Store
 *.pdf
 !resume.pdf
+!writeups/*.pdf
