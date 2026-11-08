@@ -556,6 +556,55 @@
         </ul>
       </div>
     </section>
+
+    <!-- ───────── Colophon: how this site was made ───────── -->
+    <section id="colophon" class="colophon tick" data-rid="colophon" aria-labelledby="colo-h">
+      <div class="colo-aside">
+        <p class="label colo-kicker">Colophon · this site</p>
+        <h2 id="colo-h" class="riso section-h"><span class="ink-cream">How this site was made</span><span class="ink-accent" aria-hidden="true">How this site was made</span></h2>
+        <p class="colo-intro up">I built this site with Claude. AI agents provide low quality results when given a prompt like, "make me a portfolio for an ECE Robotics student."  AI needs to be guided, the tasks need to be broke down into "Step 1, Step 1A, Step 1B, Step 2, ..." So I decided to run it like a project: design first, give the agent written and clear specs, then small passes with the agent itself, another agent checking its work, and hand corrections. All of this was so I could check groups of things at a time to ensure correctness, visual appeal, and functionality.</p>
+        <dl class="colo-stats up">
+          <div><dt class="label">Stack</dt><dd>HTML · CSS · a little JS</dd></div>
+          <div><dt class="label">Build step</dt><dd>None</dd></div>
+          <div><dt class="label">Timeline</dt><dd>Oct 16–30, 2026</dd></div>
+        </dl>
+      </div>
+
+      <ol class="colo-passes">
+        <li class="pass up">
+          <p class="pass-top"><span class="pass-n">Step 01</span><span class="pass-ink label">Design</span></p>
+          <h3 class="pass-h">Starting with visual design</h3>
+          <p>Before any code, I settled the concept: a risograph zine on dark paper, themed around some space stuff. I worked with Claude Design to help me pick out fonts, colors, wireframes, and full desktop and phone mockups.</p>
+        </li>
+        <li class="pass up">
+          <p class="pass-top"><span class="pass-n">Pass 02</span><span class="pass-ink label">Brief</span></p>
+          <h3 class="pass-h">Write the spec down</h3>
+          <p>I imported some Claude skills that were focused on visuals and web development. Then I had Claude turn the key features of the mockups into a twelve-part build brief covering color tokens,
+            page structure and layout, breakpoints, motion, accessibility,
+            and a list of required and restricted visuals. I also specified that
+            everything in the early stages would be placeholders. The agent was not allowed to
+            invent projects, numbers or links. When the first build showed departures from what I expected,
+            I revised the brief, and had it rebuild for version two.</p>
+        </li>
+        <li class="pass up">
+          <p class="pass-top"><span class="pass-n">Pass 03</span><span class="pass-ink label">Guardrails</span></p>
+          <h3 class="pass-h">Setting Rules</h3>
+          <p>A short rules file stays local on my Mac, and I make Claude Code read it every session before picking up. The rules set the aesthetic expectations (no stock fonts, no generic layouts, one-page load, low amounts of motion). I also specifically tell it that nothing goes public until I decide to launch. Working on a site that is publicly open for anyone or anything to look at means I need to control what goes live. I don't want my personal phone number or big identifiable information being public.  </p>
+        </li>
+        <li class="pass up">
+          <p class="pass-top"><span class="pass-n">Pass 04</span><span class="pass-ink label">Iterate</span></p>
+          <h3 class="pass-h">One change per pass</h3>
+          <p>After the first iterations, every request was small and specific. Things like swapping in a logo, filling in one section, adding a project. Each pass became its own commit, so I could review it, keep it, or roll it back.</p>
+        </li>
+        <li class="pass up">
+          <p class="pass-top"><span class="pass-n">Pass 05</span><span class="pass-ink label">Proof</span></p>
+          <h3 class="pass-h">Check the print, send it back</h3>
+          <p>I proofed every pass on desktop and on my phone, then reported exactly what was wrong. Arrows had turned into emojis on iOS, the contact line ran into the dish art. The words, photos and the sky plot (which is from some MATLAB code that I used to teach me Orbital Mechanics) are original and apprived.</p>
+        </li>
+      </ol>
+
+      <p class="colo-takeaway up"><span class="label">What I Learned...</span> Claude did most of the coding, a project like this would have taken more time then I had. The quality came from breaking the work into small steps it could get right. Having the agent create a plan and act upon that plan ensures quality remains. It helped me learn how to be a Shepherd, and not a Meat-Proxy.</p>
+    </section>
   </main>
 </div>
 
@@ -608,7 +657,7 @@
 
 <footer class="site-footer">
   <span>Grayson Jones · © 2026</span>
-  <span>Last updated October 2026 · <a href="https://github.com/GraysonlJones/graysonljones.github.io">Source on GitHub</a></span>
+  <span>Last updated October 2026 · <a href="#colophon">How this site was made</a> · <a href="https://github.com/GraysonlJones/graysonljones.github.io">Source on GitHub</a></span>
   <a href="#top">Back to top ↑︎</a>
 </footer>
 

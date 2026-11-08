@@ -809,6 +809,87 @@ a:focus-visible {
 .chip--tilt-l { transform: rotate(-3deg); }
 .chip--tilt-r { transform: rotate(2deg); }
 
+/* ---------- Colophon: how this site was made ----------
+   Each step is a print "pass": a sheet with its own ink bar, fanned out
+   (misregistered) a little further on each pass on wide screens. */
+
+.colophon {
+  padding: 56px 0 72px;
+  border-top: 1.5px solid var(--rule);
+}
+.colo-kicker { margin-bottom: 14px; }
+.colophon .section-h { font-size: clamp(46px, 5.4vw, 80px); }
+.colo-intro { margin: 20px 0 28px; max-width: 40ch; }
+.colo-stats { display: grid; gap: 4px; margin-bottom: 36px; }
+.colo-stats > div { display: grid; grid-template-columns: 7.5em 1fr; gap: 0 16px; align-items: baseline; }
+.colo-stats dt { color: var(--cream); opacity: .7; }
+.colo-stats dd { font-family: var(--font-label); font-stretch: var(--label-stretch); font-weight: 700; font-size: 16px; letter-spacing: .04em; }
+
+.colo-passes {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: pass;
+}
+.pass {
+  --ink: var(--accent);
+  position: relative;
+  padding: 18px 18px 20px 26px;
+  border: 1.5px solid var(--rule);
+  background:
+    radial-gradient(rgb(237 230 214 / .06) 0.9px, transparent 1.3px) 0 0 / 5px 5px,
+    rgb(14 18 38 / .72);
+}
+.pass:nth-child(even) { --ink: var(--cream); }
+/* the ink bar, printed slightly off its sheet */
+.pass::before {
+  content: "";
+  position: absolute;
+  top: -1.5px;
+  bottom: -1.5px;
+  left: -1.5px;
+  width: 8px;
+  background: var(--ink);
+  mix-blend-mode: screen;
+  transform: translate(-3px, 3px);
+}
+.pass-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.pass-n {
+  font-family: var(--font-label);
+  font-stretch: 110%;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.pass-ink { color: var(--ink); }
+.pass-h {
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -.01em;
+}
+.pass p:last-child { font-size: 17px; }
+
+.colo-takeaway {
+  margin-top: 36px;
+  max-width: 46ch;
+  font-size: clamp(22px, 2vw, 27px);
+  font-style: italic;
+  line-height: 1.3;
+}
+.colo-takeaway .label { display: block; margin-bottom: 8px; font-style: normal; }
+
 /* ---------- Contact ---------- */
 
 .contact {
@@ -1113,6 +1194,23 @@ a:focus-visible {
   .chips { gap: 10px; }
   .chips li { padding: 8px 16px; }
 
+  /* Colophon: aside left, passes fanned out to the right */
+  .colophon {
+    display: grid;
+    grid-template-columns: minmax(300px, 5fr) 7fr;
+    gap: 40px 80px;
+    padding: 96px 0 112px;
+  }
+  .colo-aside { align-self: start; position: sticky; top: 32px; }
+  .colo-passes { gap: 22px; padding-right: 64px; }
+  .pass { padding: 22px 26px 24px 34px; }
+  .pass:nth-child(2) { margin-left: 16px; }
+  .pass:nth-child(3) { margin-left: 32px; }
+  .pass:nth-child(4) { margin-left: 48px; }
+  .pass:nth-child(5) { margin-left: 64px; margin-right: -64px; }
+  .pass-h { font-size: 23px; }
+  .colo-takeaway { grid-column: 2; margin-top: 8px; }
+
   /* Contact */
   .contact {
     background:
@@ -1238,6 +1336,14 @@ a:focus-visible {
   .pull { --d: .25s; }
   .portrait { --d: .4s; }
   .about-body { --d: .15s; }
+  .colo-intro { --d: .2s; }
+  .colo-stats { --d: .3s; }
+  .pass:nth-child(1) { --d: .2s; }
+  .pass:nth-child(2) { --d: .3s; }
+  .pass:nth-child(3) { --d: .4s; }
+  .pass:nth-child(4) { --d: .5s; }
+  .pass:nth-child(5) { --d: .6s; }
+  .colo-takeaway { --d: .45s; }
 
   /* Stagger: contact */
   .wave:nth-child(1) { --d: .55s; }
